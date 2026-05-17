@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"http://localhost:3010/alerts\")",
+      "Bash(grep -oE 'ALT[^\\\\\"\\\\\\\\s<>]*')",
+      "Bash(node \"./node_modules/next/dist/bin/next\" dev --port 3010)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3010/)",
+      "PowerShell($p = \\(Get-NetTCPConnection -LocalPort 3010 -ErrorAction SilentlyContinue | Select-Object -First 1\\).OwningProcess; if \\($p\\) { Stop-Process -Id $p -Force; \"killed $p\" } else { \"no proc on 3010\" })",
+      "Bash(node \"./node_modules/next/dist/bin/next\" dev --port 3012)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3012/)",
+      "Bash(cat \"C:\\\\\\\\Users\\\\\\\\jessi\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\C--Users-jessi-OneDrive-Documents-Melb-Uni-Clubs-Societies-Case-Comps-BASS-x-EY-Hackathon-CanopyGuard-Coding\\\\\\\\4d53a70e-a82d-4014-84be-c33e1632988b\\\\\\\\tasks\\\\\\\\binayi7we.output\")",
+      "Bash(node \"./node_modules/next/dist/bin/next\" dev --port 3013)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3013/)",
+      "PowerShell(attrib +P -U /s /d 2>&1)",
+      "PowerShell(\"done\")",
+      "Bash(node \"./node_modules/next/dist/bin/next\" dev --port 3014)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3014/)",
+      "Bash(node \"./node_modules/next/dist/bin/next\" build)",
+      "Bash(node \"./node_modules/next/dist/bin/next\" dev --port 3015)",
+      "Bash([ -s \"C:\\\\\\\\Users\\\\\\\\jessi\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\C--Users-jessi-OneDrive-Documents-Melb-Uni-Clubs-Societies-Case-Comps-BASS-x-EY-Hackathon-CanopyGuard-Coding\\\\\\\\4d53a70e-a82d-4014-84be-c33e1632988b\\\\\\\\tasks\\\\\\\\b1iuus81n.output\" ])",
+      "Bash(grep -q \"ready\" \"C:\\\\\\\\Users\\\\\\\\jessi\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\C--Users-jessi-OneDrive-Documents-Melb-Uni-Clubs-Societies-Case-Comps-BASS-x-EY-Hackathon-CanopyGuard-Coding\\\\\\\\4d53a70e-a82d-4014-84be-c33e1632988b\\\\\\\\tasks\\\\\\\\b1iuus81n.output\")",
+      "Bash(cat \"C:\\\\\\\\Users\\\\\\\\jessi\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\C--Users-jessi-OneDrive-Documents-Melb-Uni-Clubs-Societies-Case-Comps-BASS-x-EY-Hackathon-CanopyGuard-Coding\\\\\\\\4d53a70e-a82d-4014-84be-c33e1632988b\\\\\\\\tasks\\\\\\\\b1iuus81n.output\")",
+      "Bash(tail -100 \"C:\\\\\\\\Users\\\\\\\\jessi\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\C--Users-jessi-OneDrive-Documents-Melb-Uni-Clubs-Societies-Case-Comps-BASS-x-EY-Hackathon-CanopyGuard-Coding\\\\\\\\4d53a70e-a82d-4014-84be-c33e1632988b\\\\\\\\tasks\\\\\\\\bfo7rcqow.output\")",
+      "Bash(node \"./node_modules/next/dist/bin/next\" start --port 3016)",
+      "Bash(npm install *)",
+      "Bash(grep -qE \"\\(Compiled successfully|Failed to compile|Error:|errors\\)\" \"C:\\\\\\\\Users\\\\\\\\jessi\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\C--Users-jessi-OneDrive-Documents-Melb-Uni-Clubs-Societies-Case-Comps-BASS-x-EY-Hackathon-CanopyGuard-Coding\\\\\\\\4d53a70e-a82d-4014-84be-c33e1632988b\\\\\\\\tasks\\\\\\\\bph5dwfnj.output\")",
+      "Bash(tail -40 \"C:\\\\\\\\Users\\\\\\\\jessi\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\C--Users-jessi-OneDrive-Documents-Melb-Uni-Clubs-Societies-Case-Comps-BASS-x-EY-Hackathon-CanopyGuard-Coding\\\\\\\\4d53a70e-a82d-4014-84be-c33e1632988b\\\\\\\\tasks\\\\\\\\bph5dwfnj.output\")",
+      "Bash(node \"./node_modules/next/dist/bin/next\" start --port 3017)",
+      "PowerShell(pwsh .\\\\scripts\\\\fix-onedrive.ps1)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3018/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3019/)",
+      "Bash(node \"./node_modules/next/dist/bin/next\" start --port 3020)",
+      "Bash(node \"./node_modules/next/dist/bin/next\" start --port 3021)"
+    ]
+  }
+}
