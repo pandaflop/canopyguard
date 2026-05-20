@@ -28,7 +28,8 @@ Clone to a location **outside any cloud-synced folder** (OneDrive, Dropbox, iClo
 ## Run
 
 ```bash
-npm run dev
+npm run build
+npm run start
 ```
 
 Open **http://localhost:3000**.
