@@ -15,7 +15,7 @@ Install Node from [nodejs.org](https://nodejs.org) and Git from [git-scm.com](ht
 ## Install
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/canopyguard.git
+git clone https://github.com/pandaflop/canopyguard.git
 cd canopyguard
 npm install
 ```
